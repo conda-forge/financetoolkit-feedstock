@@ -1,5 +1,5 @@
 {% set name = "financetoolkit" %}
-{% set version = "1.3.11" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/financetoolkit-{{ version }}.tar.gz
-  sha256: b96cdd895f1238bd5b631e62d9ba672eff18d3590241f52df2084762d2bf6ed4
+  sha256: bc0ddf6535e23a10a5fa50bc62be26003a3ba01afae05c5606a4a8d050e73c14
 
 build:
   noarch: python
@@ -25,9 +25,8 @@ requirements:
     - python >=3.10,<3.13
     - pandas >=2.1.0,<3.0.0
     - requests >=2.31.0,<3.0.0
+    - scikit-learn >=1.3.1,<2.0.0
 
-  # Not listed upstream but needed
-    - scipy >=1.11.2,<2.0.0
 
 test:
   imports:
