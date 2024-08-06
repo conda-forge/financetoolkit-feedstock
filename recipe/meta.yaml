@@ -1,5 +1,5 @@
 {% set name = "financetoolkit" %}
-{% set version = "1.9.4" %}
+{% set version = "1.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/financetoolkit-{{ version }}.tar.gz
-  sha256: c3db4458ec52d8864b4ff0bd348a116b73e356506379b542c3d0511f67198ef9
+  sha256: 1bca745026ca08ce60eabfaccff4b6846954eb929efdedea2348f4a357546458
 
 build:
   noarch: python
