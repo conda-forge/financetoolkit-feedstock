@@ -1,13 +1,14 @@
 {% set name = "financetoolkit" %}
-{% set version = "1.9.8" %}
+{% set version = "1.9.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/financetoolkit-{{ version }}.tar.gz
-  sha256: e9b2f41f73c586b0ba36a9d68313f44c760dfac4ae15917a8abaa8b73dc8a06a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/financetoolkit-{{ version }}.tar.gz
+  sha256: 80341e823befa86416db673b2701e068ed7051de3974e4ae35aa4acb53de9734
 
 build:
   noarch: python
@@ -16,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10,<3.13
+    - python {{ python_min }}
     - setuptools <65.5.0
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.10,<3.13
+    - python >={{ python_min }}
     - pandas >=2.2.0,<3.0.0
     - requests >=2.32.3,<3.0.0
     - scikit-learn >=1.5.0,<2.0.0
@@ -45,6 +46,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/JerBouma/FinanceToolkit
