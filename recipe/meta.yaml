@@ -39,6 +39,17 @@ requirements:
     # For pandas[plot]
     - matplotlib-base >=3.6.3
 
+    # For pandas[excel]
+    - odfpy >=1.4.1
+    - openpyxl >=3.1.0
+    - python-calamine >=0.1.7
+    - pyxlsb >=1.0.10
+    - xlrd >=2.0.1
+    - xlsxwriter >=3.0.5
+
+    # Not listed but required
+    - pyyaml
+
 test:
   imports:
     - financetoolkit
