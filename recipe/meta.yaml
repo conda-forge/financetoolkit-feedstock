@@ -49,6 +49,7 @@ requirements:
 
     # Not listed but required
     - pyyaml
+    - tqdm
 
 test:
   imports:
