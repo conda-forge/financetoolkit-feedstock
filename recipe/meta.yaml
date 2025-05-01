@@ -1,5 +1,5 @@
 {% set name = "financetoolkit" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/financetoolkit-{{ version }}.tar.gz
-  sha256: d3a23b7fcb4ea8a8a9d7b244b16d40065577382b015227f726076ff562eed4ee
+  sha256: 5665e8ee51f09fc31df68be1fa8383ffdd684a8004241474fe87f6a9406736ba
 
 build:
   noarch: python
@@ -18,14 +18,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools <65.5.0
     - poetry-core >=1.0.0
     - pip
   run:
     - python >={{ python_min }}
     - pandas >=2.2.0,<3.0.0
+    - scikit-learn >=1.6.0,<2.0.0
     - requests >=2.32.3,<3.0.0
-    - scikit-learn >=1.5.0,<2.0.0
+    - yfinance
+    - openpyxl >=3.1.0,<4.0.0
+    - tqdm >=4.67.0,<5.0.0
 
     # For pandas[computation]
     - scipy >=1.10.0
