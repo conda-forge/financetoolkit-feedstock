@@ -18,14 +18,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools <65.5.0
     - poetry-core >=1.0.0
     - pip
   run:
     - python >={{ python_min }}
     - pandas >=2.2.0,<3.0.0
+    - scikit-learn >=1.9.0,<2.0.0
     - requests >=2.32.3,<3.0.0
-    - scikit-learn >=1.5.0,<2.0.0
+    - yfinance
+    - openpyxl >=3.1.0,<4.0.0
+    - tqdm >=4.67.0,<5.0.0
 
     # For pandas[computation]
     - scipy >=1.10.0
