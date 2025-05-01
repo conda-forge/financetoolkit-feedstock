@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - pandas >=2.2.0,<3.0.0
-    - scikit-learn >=1.9.0,<2.0.0
+    - scikit-learn >=1.6.0,<2.0.0
     - requests >=2.32.3,<3.0.0
     - yfinance
     - openpyxl >=3.1.0,<4.0.0
