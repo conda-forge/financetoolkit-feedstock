@@ -30,6 +30,8 @@ requirements:
     - yfinance
     - openpyxl >=3.1
     - tqdm >=4.67
+    # Not listed but required
+    - pyyaml
 
 tests:
   - python:
