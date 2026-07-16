@@ -29,7 +29,6 @@ requirements:
     - requests >=2.32
     - yfinance
     - openpyxl >=3.1
-    - tqdm >=4.67
     # Not listed but required
     - pyyaml
 
@@ -38,7 +37,9 @@ tests:
       imports:
         - financetoolkit
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Transparent and Efficient Financial Analysis
