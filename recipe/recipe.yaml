@@ -24,13 +24,13 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - pandas >=2.2
+    - pandas >=3.0
     - scikit-learn >=1.6
     - requests >=2.32
     - yfinance
     - openpyxl >=3.1
     # Not listed but required
-    - pyyaml
+    - pyyaml >=6.0
 
 tests:
   - python:
