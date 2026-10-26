@@ -25,7 +25,10 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pandas >=3.0
-    - scikit-learn >=1.6
+    - numpy >=1.26
+    - scipy >=1.10
+    - python-calamine >=0.3.0
+    - xlrd >=2.0
     - requests >=2.32
     - yfinance
     - openpyxl >=3.1
