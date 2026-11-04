@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: financetoolkit
-  version: "2.3.0"
+  version: "2.3.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/financetoolkit-${{ version }}.tar.gz
-  sha256: 6e9e4d694ab738bfe8cdbb4b9b38940b73bd095808b81257222ca3c4d5f3c014
+  sha256: 2c84ec3421f669b48dcd69128a46d7c076df8e7e5d44609d069b5588d12f90e8
 
 build:
   number: 0
