@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: financetoolkit
-  version: "2.3.2"
+  version: "2.3.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/financetoolkit-${{ version }}.tar.gz
-  sha256: 292e06e3af604abd90b3ca0f53de6773a88e39efbe573caa27b71f58e1b3119d
+  sha256: e872f5e2bb2e7c8d439051a352a32d0a915c1ba14f6a57690ab7892e1dba1ba7
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - scipy >=1.10
     - python-calamine >=0.3.0
     - xlrd >=2.0
-    - requests >=2.32
+    - requests >=2.32.4
     - yfinance
     - openpyxl >=3.1
     # Not listed but required
